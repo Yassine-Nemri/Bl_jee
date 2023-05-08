@@ -51,7 +51,7 @@
               
               />
             </div>
-      
+      <div class="input_group">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -65,15 +65,15 @@
                 />
               </svg>
               <input
-        
+                (input)="clearError()"
                 type="cin"
                 placeholder="Address mail"
                 class="input_text"
                 autocomplete="off"
                 name="cin"
-           
+                [(ngModel)]="data.cin"
               />
-            
+            </div>
        
             <div class="input_group">
               <svg
